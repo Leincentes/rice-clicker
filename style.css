@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ef8d0d;
+    /* Light brown background color */
+}
+
+.rice-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    animation: fall 1s linear infinite;
+}
+
+.rice {
+    width: 2px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 0.5s linear infinite;
+}
+
+#riceImageContainer {
+    position: absolute;
+}
+
+#riceCounter {
+    position: absolute;
+    bottom: 0;
+    margin-left: 120px;
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#powerUp {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.powerUpItem {
+    text-align: center;
+    background-color: #E74C3C;
+    color: #ECF0F1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#powerUpsUI {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 54px;
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#pointsCount {
+    position: absolute;
+    margin-left: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #34495E;
+    color: #ECF0F1;
+}
+
+@keyframes fall {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100vh;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
