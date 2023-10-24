@@ -14,7 +14,7 @@
     <div id="riceImageContainer">
         <img id="riceImage" src="img/happy_rice.gif" rel:animated_src="img/happy_rice.gif"
         width="360" height="360" rel:auto_play="1" rel:rubbable="1" />
-        <div id="riceCounter">Set Rice: 100</div>
+        <div id="riceCounter">Set Rice: 200</div>
         <div id="powerUpsUI">
             <h2>POWER UPS</h2>
             <p id="currentPower">Current Power: </p>
