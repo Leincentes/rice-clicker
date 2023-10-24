@@ -12,7 +12,7 @@
         <div class="rice"></div>
     </div>
     <div id="riceImageContainer">
-        <img id="riceImage" src="./happy_rice.gif" rel:animated_src="./happy_rice.gif"
+        <img id="riceImage" src="img/happy_rice.gif" rel:animated_src="img/happy_rice.gif"
         width="360" height="360" rel:auto_play="1" rel:rubbable="1" />
         <div id="riceCounter">Set Rice: 100</div>
         <div id="powerUpsUI">
@@ -28,26 +28,26 @@
     </div>
     <div id="powerUp">
             <div class="powerUpItem">
-                <img id="farmerImage" src="./farmer.gif" rel:animated_src="./farmer.gif"
+                <img id="farmerImage" src="img/farmer.gif" rel:animated_src="img/farmer.gif"
                 width="200" height="200" rel:auto_play="1" rel:rubbable="1" />
                 <p>Farmer</p>
                 <p>10 points</p>
             </div>
             <div class="powerUpItem">
-                <img id="trucktorImage" src="./trucktor.gif" rel:animated_src="./trucktor.gif"
+                <img id="trucktorImage" src="img/trucktor.gif" rel:animated_src="img/trucktor.gif"
                 width="200" height="200" rel:auto_play="1" rel:rubbable="1" />
                 <p>Truckun</p>
                 <p>20 points</p>
             </div>
             <div class="powerUpItem">
-                <img id="marcosImage" src="./marcos.png" rel:animated_src="./marcos.png"
+                <img id="marcosImage" src="img/marcos.png" rel:animated_src="img/marcos.png"
                 width="200" height="200" rel:auto_play="1" rel:rubbable="1" />
                 <p>Bong-Bong</p>
                 <p>30 points</p>
             </div>
         </div>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="./libgif.js"></script>
-    <script type="text/javascript" src="./rubbable.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/libgif.js"></script>
+    <script type="text/javascript" src="js/rubbable.js"></script>
 </body>
 </html>
