@@ -1,6 +1,6 @@
 const riceContainer = document.querySelector('.rice-container');
-const maxRiceGrains = 50; // Maximum number of rice grains before restart
-let riceCount = 100; // Initial rice count
+const maxRiceGrains = 50;
+let riceCount = 200; // Initial rice count
 let pointsCount = 0; // Initial points count
 let subtructHolder = 1; // Initial subtructer
 let farmerPointsMultiplierHolder = 0;
@@ -62,6 +62,8 @@ document.getElementById('riceImage').addEventListener('click', function () {
     }
 });
 
+document.getElementById('playAgainButton').addEventListener('click', restartGame);
+
 function createRice() {
     const currentRiceGrains = document.querySelectorAll('.rice').length;
 
@@ -100,5 +102,27 @@ function clearRice() {
     });
 }
 
+function checkRice() {
+    // Check if the rice value is 0
+    if (riceCount === 0) {
+        document.getElementById('confetti').style.display = "block"; // Show the confetti div
+    } else {
+        document.getElementById('confetti').style.display = "none"; // Hide the confetti div
+    }
+}
+function restartGame() {
+    // Reset your game variables and state here
+    riceCount = 200; // Set the initial rice count or any other initial values
+    pointsCount = 0; // Reset points count
+    subtructHolder = 1; // Initial subtructer
+    farmerPointsMultiplierHolder = 0;
+    truckunPointsMultiplierHolder = 0;
+    marcosPointsMultiplierHolder = 0;
+    checkRice(); // Check riceCount to show/hide the confetti
+    update(); // Update the UI
+}
+
+
+setInterval(checkRice, 1000);
 setInterval(createRice, 2000);
 setInterval(update, 10);
